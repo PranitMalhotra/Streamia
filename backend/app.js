@@ -2,17 +2,16 @@ const express = require('express');
 const fs = require('fs');
 const cors = require('cors');
 const path = require('path');
-
-
 const app = express();
 
 
-app.get('/video', (req, res) => {
-    res.sendFile('assets/video1.mp4', { root: __dirname });
-});
-
-
 app.use(cors())
+
+
+//videos route
+const Videos = require('./routes/videos')
+app.use('/videos', Videos)
+
 
 
 app.listen(5000, () => {
