@@ -24,17 +24,19 @@ This GitHub project is dedicated to providing seamless video streaming capabilit
    
    ```bash
    git clone git@github.com:PranitMalhotra/Streamia.git
-   cd Stremia
+   cd Streamia
 
-2. Start the backend in one terminal window.
+2. To start the **backend**, type the commands below
    
    ```bash
+   cd backend
    npm install
    npm run start
 
-3. Start the frontend in another terminal window.
+3. Open a new terminal window and type the commands below, to run the **frontend**
    
    ```bash
+   cd Streamia/frontend
    npm install
    npm add nuxt
    npm run dev
